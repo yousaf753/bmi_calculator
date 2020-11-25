@@ -27,3 +27,21 @@ class _MySplashScreenState extends State<MySplashScreen> {
     Timer(Duration(seconds: 3), ()=>Navigator.push(context, MaterialPageRoute(builder: (context) => BMICalculator())));
 
   }
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.indigo,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Image.asset('images/bmi.png', height: 250.0, width: 250,),
+
+          SizedBox( height: 30.0),
+
+          SpinKitRipple(color: Colors.red, size: 150.0, borderWidth: 10.0,),
+        ],
+      ),
+    );
+  }
+}
