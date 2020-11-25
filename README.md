@@ -1,5 +1,7 @@
 # bmi_calculator
 
+![20201125_222243](https://user-images.githubusercontent.com/72139490/100261774-11b5cd00-2f6d-11eb-9664-88b19d845af6.gif)
+
 A new Flutter application.
 ![splash screen](https://user-images.githubusercontent.com/72139490/100257545-d82e9300-2f67-11eb-83a4-e74e87e94d16.jpg)
 
