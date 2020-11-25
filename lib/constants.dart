@@ -7,17 +7,19 @@ const kInactiveCardColour = Colors.black12;
 
 const kLabelTextStyle = TextStyle(
   fontSize: 18.0,
-  color: Color(0xFF8D8E98),
-); // TextStyle 
+  color: Colors.black,
+); // TextStyle
 
 const kNumberTextStyle = TextStyle(
   fontSize: 50.0,
   fontWeight: FontWeight.w900,
+  color: Colors.black,
 );
 
 const kLargeButtonTextStyle = TextStyle(
   fontSize: 25.0,
   fontWeight: FontWeight.bold,
+  color: Colors.black,
 );
 
 const kTitleTextStyle = TextStyle(
