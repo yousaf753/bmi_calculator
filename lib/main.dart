@@ -1,18 +1,29 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
-import 'screens/input_page.dart';
-
-void main() => runApp(BMICalculator());
-
-class BMICalculator extends StatelessWidget {
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'main_page.dart';
+void main() => runApp(SplashScreen());
+class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark().copyWith(
-        primaryColor: Color(0xFF0A0E21),
-        scaffoldBackgroundColor: Color(0xFF0A0E21),
-      ),
-      home: InputPage(),
+      home: MySplashScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
 
+class MySplashScreen extends StatefulWidget {
+  @override
+  _MySplashScreenState createState() => _MySplashScreenState();
+}
+
+class _MySplashScreenState extends State<MySplashScreen> {
+
+  @override
+  void initState() {
+    super.initState();
+
+    Timer(Duration(seconds: 3), ()=>Navigator.push(context, MaterialPageRoute(builder: (context) => BMICalculator())));
+
+  }
