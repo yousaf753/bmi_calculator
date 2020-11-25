@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
-
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 class IconContent extends StatelessWidget {
   IconContent({this.icon, this.label});
 
@@ -13,9 +13,10 @@ class IconContent extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
+
         Icon(
           icon,
-          size: 80.0,
+          size: 100,
         ),
         SizedBox(
           height: 15.0,
